@@ -38,9 +38,9 @@ public class ServicePoint {
             toc = System.currentTimeMillis();
             serviceTime = toc - tic;
             customerServed++; serviceTimeSum += serviceTime;
+            System.out.println(a);
             System.out.println(serviceTime + " ms");
             a.setEndTime(System.currentTimeMillis());
-            System.out.println(a);
             a = removeFromQueue();
         }
 

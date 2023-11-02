@@ -18,14 +18,16 @@ public class Program_Task4 {
 
             switch (choice) {
                 case 1:
-                    Customer newCustomer = new Customer(customerQueue, System.nanoTime(), System.nanoTime() + 3600000000000L);
+                    Customer newCustomer = new Customer();
+                    newCustomer.setStartTime(System.nanoTime());
+                    newCustomer.setEndTime(System.nanoTime() + 3600000000000L);
                     customerQueue.add(newCustomer);
                     System.out.println("Customer added to the queue.");
                     break;
                 case 2:
                     if (!customerQueue.isEmpty()) {
                         Customer removedCustomer = customerQueue.remove();
-                        double timeSpent = (double) removedCustomer.getTimeSpent() / 3600000000000.0;
+                        double timeSpent = (double) removedCustomer.duration() / 3600000000000.0;
                         System.out.println("Customer " + removedCustomer.getId() + " removed from the queue.");
                         System.out.println("Time spent in the queue: " + timeSpent + " hours");
                     } else {
