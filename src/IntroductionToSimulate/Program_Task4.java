@@ -1,4 +1,5 @@
 package IntroductionToSimulate;
+
 import java.util.LinkedList;
 import java.util.Scanner;
 

@@ -27,9 +27,6 @@ class Customer {
     public int getId() {
         return this.id;
     }
-    public void setId() {
-        this.id = id;
-    }
     public long getStartTime() {
         return this.startTime;
     }
@@ -39,8 +36,10 @@ class Customer {
     public void setEndTime(long endTime) {
         this.endTime = endTime;
     }
+    public void setStartTime(long startTime) {
+        this.startTime = startTime;
+    }
     public long getTimeSpent() {
         return this.endTime - this.startTime;
     }
-
 }

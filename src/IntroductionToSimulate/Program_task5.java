@@ -1,9 +1,12 @@
 package IntroductionToSimulate;
-import java.util.LinkedList;
-public class Program_task5 {
-    private LinkedList<Customer> Queue = new LinkedList<>();
 
-    public void addToQueue(Customer customer) {
-        queue.add(customer);
+public class Program_task5 {
+    public static void main(String[] args) {
+        System.out.println("Basic Queue/Servicepoint simulator");
+        ServicePoint servicePoint = new ServicePoint();
+
+        new CustomerGenerator(servicePoint);
+        servicePoint.serve();
+        System.out.println("Average servicetime: " + servicePoint.avgServiceTime() + " ms");
     }
 }
