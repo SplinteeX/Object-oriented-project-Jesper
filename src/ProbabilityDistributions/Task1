@@ -1,0 +1,10 @@
+Step 1:
+Collect accurate age distribution data of the students in group.
+Step 2:
+Determine the probability distribution of different age groups.
+Step 3:
+Use a random number generator to produce 1000 random numbers
+Step 4:
+For each generated random number, find the corresponding age group by using the CDF. Match the random value to the age group's range in the CDF to determine the simulated age.
+Step 5:
+Display or store the 1000 simulated age values.
