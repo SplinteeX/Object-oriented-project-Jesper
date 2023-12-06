@@ -1,0 +1,15 @@
+Directly Observed Variables (Arrived, Serviced, Active Time, Total Time):
+These are directly observed or recorded metrics, including the number of arriving patients (A), serviced patients (C),
+time spent treating patients (B), and total simulation time (T).
+
+Derived Metrics Category:
+These measures are calculated or derived from the directly observed variables.
+Service Point Utilization (U), Service Throughput (X),
+and Service Time (S) are derived to analyze resource utilization, capacity, and efficiency based on A, C, B, and T.
+
+Directly Observed Additions Category:
+Response Time (R) and Waiting Time (W) are directly observed metrics that impact patient experience and satisfaction.
+
+Derived from Response & Waiting Time Category:
+Derived measures, such as Response Time (R) and Average Queue Length (N), are calculated from Response Time (R) and
+Waiting Time (W), providing insights into system efficiency and patient congestion.

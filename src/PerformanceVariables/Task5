@@ -1,0 +1,25 @@
+a) A-phase coding:
+The Simulator class and its initializeSimulation() method likely handle the A-phase coding.
+This phase involves setting up the foundational elements of the simulation.
+It encompasses initializing simulation variables, establishing the model state, and preparing the event lists.
+This phase is crucial for laying the groundwork before the actual simulation begins.
+Essentially, A-phase coding involves the groundwork and initialization necessary to start the simulation.
+
+b) Coding B-events:
+The scheduleInitialEvents() method would likely be responsible for coding B-events.
+B-events refer to the scheduling of initial events within the simulation.
+These events are typically the starting point or triggers for the simulation.
+This phase involves specifying and arranging the initial events that kickstart the simulation process.
+They set the initial state and conditions for the simulation to begin its progression.
+
+c) Coding C events:
+The simulationLoop(), getNextEventTimeFromList(), advanceSimulationClock(nextEventTime), executeEvents(), and
+checkCompletionCriteria() methods are involved in handling C events.
+C events encompass the ongoing execution and management of events during the simulation loop.
+This phase involves:
+Retrieving the next event time from the list.
+Advancing the simulation clock to that time.
+Executing events scheduled for that time.
+Checking if the simulation completion criteria are met.
+C events involve the core mechanics of progressing the simulation over time, executing events as scheduled,
+and monitoring the criteria for simulation completion.

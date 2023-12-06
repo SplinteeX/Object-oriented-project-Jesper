@@ -1,0 +1,18 @@
+Health Center:
+Arrived clients ( A ): Number of patients arriving, reflecting demand.
+Serviced Clients ( C ): Number of patients serviced, indicating efficiency.
+Active time ( B ): Time spent by staff treating patients, showing utilization.
+Total simulation Time ( T ): Total time of simulation.
+
+Derived metrics:
+Service Point Utilization ( U ): Ratio of treatment time to total time, measuring resource use.
+Service Throughput (X): Rate of patients treated per unit time, showing capacity.
+Service Time (S): Average time per patient, reflecting efficiency.
+
+Directly Observed Additions:
+Response Time (R𝑖): Time from arrival to treatment end, impacting patient experience.
+Waiting Time (W): Cumulative response times, influencing overall patient satisfaction.
+
+Derived from Response & Waiting Time:
+Response Time (R): Average time at the health center, showing system efficiency.
+Average Queue Length (N): Average patients waiting, indicating congestion.

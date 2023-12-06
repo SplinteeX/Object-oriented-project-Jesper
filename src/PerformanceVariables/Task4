@@ -1,0 +1,31 @@
+Initialization:
+    Create a class Simulator.
+    Define initializeSimulation() method to set up simulation variables, model state, and event lists.
+
+Scheduling Initial Events:
+    Implement scheduleInitialEvents() to set the starting events for the simulation.
+
+Simulation Loop:
+    Create a loop in simulationLoop() that runs until the simulation completion criteria are met.
+
+Within the loop:
+    Get the time of the next event using getNextEventTimeFromList().
+    Move the simulation clock to this time using advanceSimulationClock(nextEventTime).
+    Execute events due at the current simulation time using executeEvents().
+    Check if the simulation completion criteria are met using checkCompletionCriteria().
+
+Advancing Simulation Clock:
+    Implement advanceSimulationClock(double nextEventTime) to update the simulation clock to the time of the next event.
+
+Executing Events:
+    Define executeEvents() to handle and execute scheduled events at the current simulation time.
+
+Simulation Completion:
+    Implement simulationFinished() and checkCompletionCriteria() methods to determine if the simulation completion conditions are met.
+
+Main Method:
+    In the main() method:
+    Instantiate the Simulator class.
+    Initialize the simulation using initializeSimulation().
+    Schedule initial events using scheduleInitialEvents().
+    Run the simulation loop using simulationLoop().
